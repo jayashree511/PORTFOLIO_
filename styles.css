@@ -1,0 +1,286 @@
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+/* Global styles */
+body {
+    font-family:'Times New Roman', Times, serif;
+    line-height: 1.6;
+    background-color: #f0f5ff; /* Blue theme background */
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin:auto;
+    padding: 10px;
+}
+
+.header {
+    background-color: #60bdf3; /* Blue theme header */
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 3rem;
+}
+
+.header p {
+    font-size: 1.5rem;
+    margin-top: 0.5rem;
+}
+
+.navbar {
+    background-color: #f469a5; /* Blue theme navbar */
+}
+
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+.navbar ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    background-color: #7a6af5; /* Hover color */
+}
+
+.section {
+    padding: 40px 0;
+    text-align:center;
+}
+
+.section.hero {
+    background-color: #fff; /* White background */
+    color: #333;
+}
+
+.section.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.section.hero p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+.about-me {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-stretch:expanded;
+    
+}
+.about-me h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+.about-me p {
+    line-height: 1.6;
+    color: #333;
+    
+}
+.about-me img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    float: left;
+    margin-right: 20px;
+}
+
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header Styling */
+header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
+/* Education Section Styling */
+.education {
+    max-width: 1200px;
+    margin: 2em auto;
+    padding: 1em;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display:-webkit-box;
+}
+
+.degree {
+    margin-bottom: 4em;
+    margin-right:30px;
+    
+}
+
+.degree h2 {
+    color: #690550;
+    margin-bottom: 1em;
+}
+
+
+
+
+
+.college-photo {
+    width: 100%;
+    max-width:auto ;
+    height: 200px;
+    border-radius: 20px;
+    margin-bottom: 1em;
+    padding-right: 20px;
+    padding-bottom: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .college-photo {
+        width: 100%;
+    }
+}
+.projects {
+    max-width: 1000px;
+    margin: 2em auto;
+    padding: 1em;
+}
+
+.project {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2em;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-image {
+    width: 100%;
+    height: 350px;
+    object-fit:cover;
+    
+}
+
+.project-info {
+    padding: 1em;
+}
+
+.project-info h2 {
+    color: #4CAF50;
+    margin-bottom: 0.5em;
+}
+
+.project-info p {
+    margin-bottom: 1em;
+}
+
+.project-link {
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.project-link:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 250px) {
+    .project {
+        flex-direction: column;
+    }
+}
+
+
+
+
+
+
+.footer {
+    background-color: #60bdf3; /* Blue theme footer */
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Profile Picture Styles */
+.profile {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    overflow: hidden;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    cursor: pointer;
+    
+}
+
+.profile-picture {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform:rotateX('360');
+    transition: transform 0.5s;
+}
+
+.profile-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.profile:hover .profile-picture {
+    transform: rotateY(180deg);
+}
+
+.profile:hover .profile-overlay {
+    opacity: 1;
+}
+
